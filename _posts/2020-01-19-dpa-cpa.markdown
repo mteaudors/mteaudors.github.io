@@ -1,0 +1,14 @@
+---
+title: DPA/CPA attacks against naive AES implementation
+subtitle: Side Channel Attacks
+layout: default
+modal-id: 1
+img: chipwhisperer.jpg
+thumbnail: smooth_red.png
+alt: image-alt
+project-date: January, 2020
+report: https://drive.google.com/open?id=10YjJVGBUsZ0G1UfHDFawqZi0YWz-L6rc
+flag: france-icon.png
+description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+
+---
