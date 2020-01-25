@@ -270,7 +270,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/background.jpg');
+    background-image: url('img/background.jpg');
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -381,7 +381,6 @@ section h3.section-subheading {
 
 #portfolio .portfolio-item .img-thumbnail {
     height: 300px;
-    width: 400px;
     margin: 0px;
     display: table-cell;
     vertical-align: middle;
@@ -692,7 +691,7 @@ aside.clients img {
 
 section#contact {
     background-color: #222;
-    background-image: url('{{ site.baseurl }}/img/contact-background.jpg');
+    background-image: url('img/contact-background.jpg');
     background-position: center;
     background-repeat: no-repeat;
 }

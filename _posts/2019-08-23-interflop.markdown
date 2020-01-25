@@ -1,6 +1,6 @@
 ---
 title: Floating Point instructions perturbation with stochastic arithmeric 
-subtitle: Interflop project
+subtitle: Numerical stability 
 layout: default
 modal-id: 4
 img: armcortex.jpg
