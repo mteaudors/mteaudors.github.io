@@ -14,22 +14,26 @@
                         <div class="modal-body">
                             <h2>{{ post.title }}</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-                            <p>{{ post.description }}</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">{{ post.client }}</a>
-                                    </strong>
-                                </li>
+                            {% if post.img %}
+                                <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered img-work" alt="{{ post.alt }}">
+                            {% endif %}
+                            <ul class="item-details">
                                 <li>Date:
-                                    <strong><a href="http://startbootstrap.com">{{ post.project-date }}</a>
-                                    </strong>
+                                    <strong>{{ post.project-date }}</strong>
                                 </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">{{ post.category }}</a>
-                                    </strong>
-                                </li>
+                                <li><img src="img/portfolio/{{ post.flag }}"></li>
                             </ul>
+                            <p>{{ post.description }}</p>
+
+                            {% if post.report %}
+                                <a href="{{ post.report }}" class="btn btn-xl report-button" target="blank">Read the report</a>
+                            {% endif %}
+                            
+                            {% if post.slide %}
+                                <a href="{{ post.slide }}" class="btn btn-xl report-button" target="blank">View the slides</a>
+                            {% endif %}
+
+                            <br/>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>

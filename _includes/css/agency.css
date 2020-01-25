@@ -234,6 +234,7 @@ fieldset[disabled] .btn-xl.active {
     background-color: #{{ site.data.template.color.secondary }};
 }
 
+
 @media(min-width:768px) {
     .navbar-default {
         padding: 25px 0;
@@ -269,26 +270,42 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/header-bg.jpg');
+    background-image: url('{{ site.baseurl }}/img/background.jpg');
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    
+}
+
+
+header div.container
+{
+    overflow: hidden;
+    width:100%;
+    padding: 0;
+}
+.blur-back
+{   
+    width: 100%;
+    backdrop-filter: blur(3px);
 }
 
 header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
+    
 }
 
 header .intro-text .intro-lead-in {
-    margin-bottom: 25px;
+    margin-bottom: 50px;
     font-family: {{ site.data.template.font.secondary }};
-    font-size: 22px;
+    font-size: 35px;
     font-style: italic;
     line-height: 22px;
+    text-align:center;
 }
 
 header .intro-text .intro-heading {
@@ -300,22 +317,23 @@ header .intro-text .intro-heading {
     line-height: 50px;
 }
 
+
 @media(min-width:768px) {
     header .intro-text {
         padding-top: 300px;
-        padding-bottom: 200px;
+        padding-bottom: 300px;
     }
 
     header .intro-text .intro-lead-in {
         margin-bottom: 25px;
         font-family: {{ site.data.template.font.secondary }};
-        font-size: 40px;
+        font-size: 60px;
         font-style: italic;
         line-height: 40px;
     }
 
     header .intro-text .intro-heading {
-        margin-bottom: 50px;
+        margin-bottom: 100px;
         text-transform: uppercase;
         font-family: {{ site.data.template.font.primary }};
         font-size: 75px;
@@ -327,6 +345,7 @@ header .intro-text .intro-heading {
 section {
     padding: 100px 0;
 }
+
 
 section h2.section-heading {
     margin-top: 0;
@@ -357,7 +376,22 @@ section h3.section-subheading {
 #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
+    height: 400px;
 }
+
+#portfolio .portfolio-item .img-thumbnail {
+    height: 300px;
+    width: 400px;
+    margin: 0px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#portfolio .portfolio-item .img-thumbnail 
+{
+    margin: auto;
+}
+
 
 #portfolio .portfolio-item .portfolio-link {
     display: block;
@@ -658,13 +692,14 @@ aside.clients img {
 
 section#contact {
     background-color: #222;
-    background-image: url('{{ site.baseurl }}/img/map-image.png');
+    background-image: url('{{ site.baseurl }}/img/contact-background.jpg');
     background-position: center;
     background-repeat: no-repeat;
 }
 
 section#contact .section-heading {
     color: #fff;
+    margin-bottom: 30px;
 }
 
 section#contact .form-group {
@@ -786,7 +821,17 @@ ul.social-buttons li a:active {
 
 .portfolio-modal .modal-content h2 {
     margin-bottom: 15px;
-    font-size: 3em;
+    font-size: 2em;
+}
+
+.portfolio-modal ul
+{
+    list-style: none;
+}
+
+.portfolio-modal ul li
+{
+    margin-bottom: 10px;
 }
 
 .portfolio-modal .modal-content p {
@@ -865,3 +910,79 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
+
+#profile-picture
+{
+    width: 500px;
+}
+
+#presentation > div > div.raw.text-center > div:nth-child(2) > img
+{
+    max-width: 250px;
+    margin: auto;
+}
+
+#presentation > div > div.raw.text-center > div:nth-child(1) > p
+{
+    vertical-align: middle;
+}
+
+.img-book
+{
+    margin : auto;
+    height: 500px;
+}
+
+.img-social
+{
+    margin: auto;
+    height: 200px;
+}
+
+#img-quote
+{
+    margin: auto;
+    height: 50px;
+}
+
+#quote
+{
+    font-size: 30px;
+    text-align: center;
+}
+
+#quote-author
+{
+    text-align: right;
+}
+
+#contact > div > div:nth-child(1) > div > h3
+{
+    color:#000;
+}
+
+#contact > div > div:nth-child(2) > div
+{
+    color:#fff;
+}
+
+#contact > div > div:nth-child(2) > div.col-sm-6.text-center > span:nth-child(1)
+{
+    margin-right: 20px;
+}
+
+#contact > div > div:nth-child(2) > div.col-sm-6.text-center
+{
+    margin-bottom: 30px;
+}
+
+.report-button
+{
+    margin-bottom: 15px;
+}
+
+.img-work
+{
+    height: 350px;
+}
+
