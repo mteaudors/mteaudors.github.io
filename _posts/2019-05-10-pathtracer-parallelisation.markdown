@@ -2,7 +2,7 @@
 title: Multi-Node parallelisation of path-tracing code
 subtitle: High Performance Computing
 layout: default
-modal-id: 3
+modal-id: 5
 thumbnail: pathtracer.png
 img: multiprocessor.jpg
 alt: image-alt
