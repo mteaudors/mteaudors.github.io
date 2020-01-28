@@ -23,7 +23,10 @@
                                 </li>
                                 <li><img src="img/portfolio/{{ post.flag }}"></li>
                             </ul>
-                            <p>{{ post.description }}</p>
+
+                            {% if post.description %}
+                                <p>{{ post.description }}</p>
+                            {% endif %}
 
                             {% if post.report %}
                                 <a href="{{ post.report }}" class="btn btn-xl report-button" target="blank">Read the report</a>
