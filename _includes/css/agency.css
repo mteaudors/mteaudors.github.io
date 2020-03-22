@@ -381,6 +381,7 @@ section h3.section-subheading {
 
 #portfolio .portfolio-item .img-thumbnail {
     height: 300px;
+    width: 400px;
     margin: 0px;
     display: table-cell;
     vertical-align: middle;
@@ -442,6 +443,11 @@ section h3.section-subheading {
     max-width: 400px;
     text-align: center;
     background-color: #fff;
+}
+
+#portfolio .portfolio-item .portfolio-caption:hover {
+    cursor: pointer;
+    color:#{{ site.data.template.color.primary }};
 }
 
 #portfolio .portfolio-item .portfolio-caption h4 {
