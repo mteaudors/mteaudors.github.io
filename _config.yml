@@ -53,6 +53,10 @@ social-media:
   - title: Goodreads
     url: https://www.goodreads.com/user/show/97766311-mickael
     icon: img/goodreads-icon.png
+  - title: Medium
+    url: https://medium.com/@mteaudors
+    icon: img/medium-icon.png
+    
 
 
 # Postal address (add as many lines as necessary)
